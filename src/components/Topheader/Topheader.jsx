@@ -3,6 +3,7 @@ import { Box, Img, Text, Stack, Avatar } from '@chakra-ui/react';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import Magicpen from '../../assets/images/magicpen.png';
 import Icon1 from '../../assets/images/Icon1.png';
+import { Link } from 'react-router-dom';
 import Icon2 from '../../assets/images/Icon2.png';
 import Icon3 from '../../assets/images/Icon3.png';
 import Icon4 from '../../assets/images/Icon4.png';
@@ -23,7 +24,9 @@ const Topheader = bool => {
             border={'1px solid gray'}
             height={'40px'}
           >
+            <Link to={'/'}>
             <AiOutlineArrowLeft color="white" />
+            </Link>
           </Box>
           <Box color={'white'}>
             <Text fontSize={'19px'} fontWeight={'600'}>

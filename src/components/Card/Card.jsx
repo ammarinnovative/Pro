@@ -14,7 +14,7 @@ const Card = () => {
       padding={'15px'}
       backgroundColor={'rgba(35 65 95)'}
       borderRadius={'15px'}
-      width={"32%"}
+      width={'32%'}
       border={'1px solid gray'}
     >
       <Stack
@@ -37,6 +37,14 @@ const Card = () => {
           74%
         </Box>
       </Stack>
+      <Box mt="10px" width="100%" color="black">
+        <Box
+          width="70%"
+          bgGradient="linear(to-r, teal.200, blue.500)"
+          borderRadius="5px"
+          padding={'5px'}
+        ></Box>
+      </Box>
       <Text mt={'20px'} color={'white'}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
         ab?
@@ -68,7 +76,7 @@ const Card = () => {
           </Text>
         </Box>
       </Stack>
-      <Box display={"flex"} justifyContent={"right"}>
+      <Box display={'flex'} justifyContent={'right'}>
         <Stack
           width={'70%'}
           textAlign={'right'}

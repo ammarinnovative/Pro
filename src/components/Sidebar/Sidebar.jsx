@@ -35,14 +35,15 @@ import {
 } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import { ReactText } from 'react';
+import { Link } from 'react-router-dom';
 
 const LinkItems = [
   { name: 'Dashboard', icon: FiHome, link: '/' },
   { name: 'Projects', icon: BsPeopleFill, link: '/project' },
-  { name: 'Discover Saudi', icon: CiDiscount1 },
-  { name: 'People', icon: BsPeopleFill },
-  { name: 'Community', icon: RiCommunityLine },
-  { name: 'E-Library', icon: SiLiberapay },
+  { name: 'Discover Saudi', icon: CiDiscount1,link:"" },
+  { name: 'People', icon: BsPeopleFill, link:""},
+  { name: 'Community', icon: RiCommunityLine,link:"" },
+  { name: 'E-Library', icon: SiLiberapay,link:"" },
 ];
 
 export default function SimpleSidebar({ children }) {
@@ -85,12 +86,13 @@ const SidebarContent = ({ onClose, ...rest }) => {
       h="full"
       {...rest}
     >
-      <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
+      <Flex h="20" mb={"40px"} alignItems="center" mx="8" justifyContent="space-between">
         <Img width={'160px'} src={Logo} alt="image" />
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
 
-      {LinkItems.map(link => (
+      {LinkItems?.map(link => (
+        <Link  to={link.link}>
         <NavItem>
           {link.icon instanceof Function ? (
             <Icon
@@ -106,6 +108,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
           )}
           {link.name}
         </NavItem>
+        </Link>
       ))}
     </Box>
   );

@@ -4,7 +4,7 @@ import { AiTwotoneCalendar } from 'react-icons/ai';
 import { BiMessageSquareDetail, BiRightArrowAlt } from 'react-icons/bi';
 import { BiMessageRoundedCheck } from 'react-icons/bi';
 
-const Workcard = ({title,num}) => {
+const Workcard = ({ title, num }) => {
   return (
     <>
       <Box
@@ -13,19 +13,25 @@ const Workcard = ({title,num}) => {
         borderRadius={'10px'}
         width={'32%'}
       >
-        <Text fontWeight={'600'} ml={"10px"} fontSize={'18px'} color={'white'}>
+        <Text fontWeight={'600'} ml={'10px'} fontSize={'18px'} color={'white'}>
           {title}({num})
         </Text>
-        <Box mt={'10px'}  borderRadius={"30px"} padding={"10px"} overflow={'auto'} height={'40vh'}>
+        <Box
+          mt={'10px'}
+          borderRadius={'30px'}
+          padding={'10px'}
+          overflow={'auto'}
+          height={'40vh'}
+        >
           <Box
-            //  bgImage="url('your-background-image.jpg')" 
-            //  bgSize="cover" 
+            //  bgImage="url('your-background-image.jpg')"
+            //  bgSize="cover"
             //  bgPosition="center"
-             backgroundColor={'#34506c'}
-             borderRadius={'10px'}
-             mt={'20px'}
-             border={'1px solid gray'}
-             padding={'20px 10px'}
+            backgroundColor={'#34506c'}
+            borderRadius={'10px'}
+            mt={'20px'}
+            border={'1px solid gray'}
+            padding={'20px 10px'}
           >
             <Stack
               direction={'row'}
@@ -57,7 +63,11 @@ const Workcard = ({title,num}) => {
                 ...
               </Box>
             </Stack>
-            <Stack>
+            <Stack
+              direction="row"
+              alignItems="center"
+              justifyContent="space-between"
+            >
               <Stack
                 mt={'10px'}
                 direction={'row'}
@@ -70,7 +80,16 @@ const Workcard = ({title,num}) => {
                 <AiTwotoneCalendar fontSize={'18px'} color="white" />
                 <Text color={'gray'}>Mon,Aug,2023</Text>
               </Stack>
+              <Text color="white">3/10</Text>
             </Stack>
+            <Box mt="10px" width="60%" color="black">
+            <Box
+              width="100%"
+              bgGradient="linear(to-r, teal.200, blue.500)"
+              borderRadius="5px"
+              padding={'5px'}
+            ></Box>
+          </Box>
             <Box display={'flex'} justifyContent={'right'}>
               <Stack
                 width={'70%'}
@@ -153,7 +172,11 @@ const Workcard = ({title,num}) => {
                 ...
               </Box>
             </Stack>
-            <Stack>
+            <Stack
+              direction="row"
+              alignItems="center"
+              justifyContent="space-between"
+            >
               <Stack
                 mt={'10px'}
                 direction={'row'}
@@ -165,8 +188,18 @@ const Workcard = ({title,num}) => {
               >
                 <AiTwotoneCalendar fontSize={'18px'} color="white" />
                 <Text color={'gray'}>Mon,Aug,2023</Text>
+                <Text color="white">3/10</Text>
+
               </Stack>
             </Stack>
+            <Box mt="10px" width="100%" color="black">
+            <Box
+              width="90%"
+              bgGradient="linear(to-r, teal.200, blue.500)"
+              borderRadius="5px"
+              padding={'5px'}
+            ></Box>
+          </Box>
             <Box display={'flex'} justifyContent={'right'}>
               <Stack
                 width={'70%'}
@@ -249,7 +282,11 @@ const Workcard = ({title,num}) => {
                 ...
               </Box>
             </Stack>
-            <Stack>
+            <Stack
+              direction="row"
+              alignItems="center"
+              justifyContent="space-between"
+            >
               <Stack
                 mt={'10px'}
                 direction={'row'}
@@ -261,8 +298,18 @@ const Workcard = ({title,num}) => {
               >
                 <AiTwotoneCalendar fontSize={'18px'} color="white" />
                 <Text color={'gray'}>Mon,Aug,2023</Text>
+                <Text color="white">3/10</Text>
+
               </Stack>
             </Stack>
+            <Box mt="10px" width="50%" color="black">
+            <Box
+              width="100%"
+              bgGradient="linear(to-r, teal.200, blue.500)"
+              borderRadius="5px"
+              padding={'5px'}
+            ></Box>
+          </Box>
             <Box display={'flex'} justifyContent={'right'}>
               <Stack
                 width={'70%'}
@@ -345,7 +392,11 @@ const Workcard = ({title,num}) => {
                 ...
               </Box>
             </Stack>
-            <Stack>
+            <Stack
+              direction="row"
+              alignItems="center"
+              justifyContent="space-between"
+            >
               <Stack
                 mt={'10px'}
                 direction={'row'}
@@ -357,8 +408,17 @@ const Workcard = ({title,num}) => {
               >
                 <AiTwotoneCalendar fontSize={'18px'} color="white" />
                 <Text color={'gray'}>Mon,Aug,2023</Text>
+                <Text color="white">3/10</Text>
               </Stack>
             </Stack>
+            <Box mt="10px" width="100%" color="black">
+            <Box
+              width="100%"
+              bgGradient="linear(to-r, teal.200, blue.500)"
+              borderRadius="5px"
+              padding={'5px'}
+            ></Box>
+          </Box>
             <Box display={'flex'} justifyContent={'right'}>
               <Stack
                 width={'70%'}

@@ -20,8 +20,7 @@ import { BsFillCalendarFill } from 'react-icons/bs';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { MdBuild, MdCall, MdSwapVert } from 'react-icons/md';
 import Content from '../../components/Content/Content';
-import Workcard from "../../components/Workcard/WorkCard";
-
+import Workcard from '../../components/Workcard/WorkCard';
 
 export default function Project() {
   return (
@@ -78,6 +77,14 @@ export default function Project() {
               </Text>
             </Stack>
           </Stack>
+          <Box mt="10px" width="100%" color="black">
+            <Box
+              width="100%"
+              bgGradient="linear(to-r, teal.200, blue.500)"
+              borderRadius="5px"
+              padding={'5px'}
+            ></Box>
+          </Box>
           <Stack
             direction={'row'}
             mt={'25px'}
@@ -110,21 +117,36 @@ export default function Project() {
               return <Img src={layer} alt="img" />;
             })}
           </Box>
-          <Stack width={"100%"} direction={'row'} mt={'20px'} justifyContent={'space-between'}>
+          <Stack
+            width={'100%'}
+            direction={'row'}
+            mt={'20px'}
+            justifyContent={'space-between'}
+          >
             <Text color={'white'}>Keep up to good work!</Text>
             <Stack alignItems={'center'} direction={'row'}>
-              <Button _hover={"none"}  border={"1px solid gray"} color={"white"} backgroundColor={"rgb(58 76 96)"}> 
+              <Button
+                _hover={'none'}
+                border={'1px solid gray'}
+                color={'white'}
+                backgroundColor={'rgb(58 76 96)'}
+              >
                 Filter by <AiOutlineDown fontSize={'20px'} />
               </Button>
-              <Button _hover={"none"} border={"1px solid gray"} color={"white"}  backgroundColor={"rgb(58 76 96)"}>
+              <Button
+                _hover={'none'}
+                border={'1px solid gray'}
+                color={'white'}
+                backgroundColor={'rgb(58 76 96)'}
+              >
                 Sort by <MdSwapVert fontSize={'25px'} />
               </Button>
             </Stack>
           </Stack>
-          <Stack direction={"row"}  mt={"30px"}>
-          <Workcard title={"Pending"} num={"2"}  />
-          <Workcard title={"IN Progress"} num={"4"} />
-          <Workcard title={"Done"} num={"4"} />
+          <Stack direction={'row'} mt={'30px'}>
+            <Workcard title={'Pending'} num={'2'} />
+            <Workcard title={'IN Progress'} num={'4'} />
+            <Workcard title={'Done'} num={'4'} />
           </Stack>
         </Box>
       </Box>
