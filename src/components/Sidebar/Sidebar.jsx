@@ -22,7 +22,6 @@ import { RiCommunityLine } from 'react-icons/ri';
 import { BsPeopleFill } from 'react-icons/bs';
 import { RiCompassDiscoverFill } from 'react-icons/ri';
 import { GoProjectTemplate } from 'react-icons/go';
-import { CiDiscount1 } from 'react-icons/ci';
 import { FaDiagramProject } from 'react-icons/fa';
 import Logo from '../../assets/images/Logo (1).png';
 import {
@@ -40,7 +39,6 @@ import { Link } from 'react-router-dom';
 const LinkItems = [
   { name: 'Dashboard', icon: FiHome, link: '/' },
   { name: 'Projects', icon: BsPeopleFill, link: '/project' },
-  { name: 'Discover Saudi', icon: CiDiscount1,link:"" },
   { name: 'People', icon: BsPeopleFill, link:""},
   { name: 'Community', icon: RiCommunityLine,link:"" },
   { name: 'E-Library', icon: SiLiberapay,link:"" },
